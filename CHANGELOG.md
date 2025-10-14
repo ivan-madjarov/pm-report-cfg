@@ -1,0 +1,75 @@
+# Changelog
+
+All notable changes to the Patch Manager Plus Custom Query Reports repository will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Added
+- Initial repository setup with documentation
+- Mitel Networks Corporation proprietary license
+- Comprehensive README documentation
+
+## [1.0.0] - 2025-01-14
+
+### Added
+- Extended PPM Report query with comprehensive patch management data
+- Short PPM Report query for condensed patch information
+- Branch Office Details queries for distributed environment management
+- Managed Devices Details query for complete device inventory
+- SQL query collection in `SQL Query Reports.sql`
+
+### Features
+- Customer information and CI tracking
+- Patch status monitoring (Missing/Installed)
+- Health status assessment (Highly Vulnerable/Vulnerable/Healthy)
+- Operating system and service pack reporting
+- Reboot requirement analysis
+- Branch office management and agent deployment status
+- Device inventory with installation timestamps
+- Live status monitoring capabilities
+
+### Documentation
+- Complete usage instructions
+- Database table reference
+- Customization guidelines
+- Security and compliance considerations
+- Export and integration options
+
+### Database Schema Support
+- Compatible with ManageEngine Patch Manager Plus database
+- Supports standard PMP table structure
+- Includes custom fields integration
+- Branch office and replication policy support
+
+### Notes
+- Query Reports feature is not available for PMP Cloud deployments
+- Requires on-premises Patch Manager Plus installation
+- Database access permissions required for query execution
+
+---
+
+## Version History
+
+- **v1.0.0**: Initial release with core query collection and documentation
+- **Future releases**: Will include additional queries, performance optimizations, and enhanced reporting capabilities
+
+## Migration Notes
+
+When upgrading Patch Manager Plus versions:
+1. Test all queries against the new database schema
+2. Review any deprecated tables or columns
+3. Update queries as needed for compatibility
+4. Validate report output accuracy
+
+## Support Matrix
+
+| PMP Version | Compatibility | Notes |
+|-------------|---------------|-------|
+| 10.x        | ✅ Supported  | Full compatibility |
+| 11.x        | ✅ Supported  | Full compatibility |
+| 12.x        | ⚠️ Testing    | Under validation |
+
+For version-specific compatibility information, consult the ManageEngine Patch Manager Plus documentation or contact support.

@@ -1,0 +1,69 @@
+# Patch Manager Plus Query Reports - .gitignore
+
+# CSV Export Files
+*.csv
+exports/
+reports/
+output/
+
+# Temporary files
+*.tmp
+*.temp
+~*
+.~*
+
+# Log files
+*.log
+logs/
+
+# Database connection files (security)
+connection.txt
+database.conf
+*.dsn
+db_config.*
+
+# Backup files
+*.bak
+*.backup
+backup/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+*~
+
+# Archive files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+archives/
+
+# Test and development
+test/
+dev/
+scratch/
+sandbox/
+
+# Credentials and sensitive data
+credentials.*
+config.ini
+settings.conf
+*.env
+
+# Generated documentation
+docs/build/
+docs/_build/
+
+# Cache files
+cache/
+.cache/
+*.cache
