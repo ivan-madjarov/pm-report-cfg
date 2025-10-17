@@ -29,7 +29,7 @@ This document provides detailed instructions for using the SQL queries in this r
 - Customer-specific reporting with CI integration
 
 **Steps to Use**:
-1. Copy the Extended PPM Report query from `SQL Query Reports.sql`
+1. Copy the Extended PPM Report query from `queries/extended_pmp_report.sql` (or legacy `queries/archive/SQL Query Reports.sql`)
 2. Paste into the SQL Query field
 3. Configure report name: "Extended PPM Report - [Date]"
 4. Set description: "Comprehensive patch status report with system details"

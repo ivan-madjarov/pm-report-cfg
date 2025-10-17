@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Moved `QUERY_INDEX.md` to `docs/` folder for better documentation organization
+- Moved `SQL Query Reports.sql` to `queries/archive/` subfolder as legacy file
+- Updated all documentation references to reflect new folder structure
+
 ### Added
 - Initial repository setup with documentation
 - Mitel Networks Corporation proprietary license

@@ -20,14 +20,14 @@ pm-report-cfg/
 ├── README.md                    # Main documentation
 ├── LICENSE                     # Mitel proprietary license
 ├── CHANGELOG.md                # Version history
-├── QUERY_INDEX.md              # Complete query reference
 ├── queries/                    # Core SQL query files
 │   ├── extended_pmp_report.sql
 │   ├── short_pmp_report.sql
 │   ├── branch_office_simple.sql
 │   ├── branch_office_detailed.sql
 │   ├── managed_devices_details.sql
-│   └── SQL Query Reports.sql   # Legacy combined file
+│   └── archive/                # Archived/legacy files
+│       └── SQL Query Reports.sql   # Legacy combined file
 ├── examples/                   # Example and specialized queries
 │   ├── security_vulnerability_report.sql
 │   ├── patch_compliance_summary.sql
@@ -35,6 +35,7 @@ pm-report-cfg/
 └── docs/                       # Detailed documentation
     ├── CONFIGURATION.md        # Setup and configuration guide
     ├── USAGE_GUIDE.md          # Detailed usage instructions
+    ├── QUERY_INDEX.md          # Complete query reference
     └── DATABASE_SCHEMA.md      # Database reference
 ```
 
@@ -87,7 +88,7 @@ pm-report-cfg/
 
 ## Quick Start
 
-1. **Choose a Report:** Browse the `QUERY_INDEX.md` for available queries
+1. **Choose a Report:** Browse the `docs/QUERY_INDEX.md` for available queries
 2. **Access PMP Console:** Navigate to **Reports** → **Custom Report** → **New Query Report**
 3. **Copy Query:** Select and copy the desired SQL query from the appropriate file
 4. **Create Report:** Paste query, configure name and description, then generate
