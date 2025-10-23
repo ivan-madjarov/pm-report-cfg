@@ -1,6 +1,10 @@
 -- =============================================================================
--- EXTENDED PPM REPORT
+-- EXTENDED PPM REPORT (EXAMPLE - NOT PRODUCTION READY)
 -- =============================================================================
+-- ⚠️  WARNING: This query may not work reliably in all PM+ environments
+-- ⚠️  Known Issues: Complex CASE statements, LONG_TO_DATE with aliases
+-- ⚠️  Status: EXPERIMENTAL - Use short_pmp_report.sql for production
+--
 -- Purpose: Comprehensive patch management report with detailed system and patch information
 -- Use Case: Monthly compliance reports, security assessments, detailed inventories
 -- Includes: Customer info, system details, patch status, health metrics, installation data

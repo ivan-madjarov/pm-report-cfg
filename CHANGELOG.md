@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
+- **Moved problematic queries to examples**: `extended_pmp_report.sql` and `managed_devices_details.sql`
+  - These queries have PM+ compatibility issues and are now marked as EXPERIMENTAL
+  - Recommend using `short_pmp_report.sql` for production patch reporting
 - Moved `examples/` folder under `queries/` directory for better organization
 - Moved `QUERY_INDEX.md` to `docs/` folder for better documentation organization
 - Moved `SQL Query Reports.sql` to `queries/archive/` subfolder as legacy file
@@ -19,11 +22,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed smart quotes issue causing "invalid parameter format" errors in PM+ query reports
 - All queries now use standard ASCII quotes for proper PM+ compatibility
 - Removed trailing semicolons and unnecessary sorting for better query execution
+- Restored original query structure from archive to fix type casting errors
+- Removed CASE statements causing "boolean = integer" type errors
 
 ### Added
 - Initial repository setup with documentation
 - Mitel Networks Corporation proprietary license
 - Comprehensive README documentation
+- Warning labels for experimental/problematic queries
+
+### Deprecated
+- `extended_pmp_report.sql` - Moved to examples, use `short_pmp_report.sql` instead
+- `managed_devices_details.sql` - Moved to examples due to PM+ compatibility issues
 
 ## [1.0.0] - 2025-01-14
 

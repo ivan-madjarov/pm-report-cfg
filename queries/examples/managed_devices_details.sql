@@ -1,6 +1,10 @@
 -- =============================================================================
--- MANAGED DEVICES DETAILS
+-- MANAGED DEVICES DETAILS (EXAMPLE - NOT PRODUCTION READY)
 -- =============================================================================
+-- ⚠️  WARNING: This query may not work reliably in all PM+ environments
+-- ⚠️  Known Issues: Large result sets, multiple column aliases may cause errors
+-- ⚠️  Status: EXPERIMENTAL - Test thoroughly before use
+--
 -- Purpose: Complete device inventory and management status information
 -- Use Case: Asset management, agent health monitoring, system lifecycle tracking
 -- Includes: Agent details, system info, branch associations, live status

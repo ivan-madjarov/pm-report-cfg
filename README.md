@@ -21,12 +21,12 @@ pm-report-cfg/
 ├── LICENSE                     # Mitel proprietary license
 ├── CHANGELOG.md                # Version history
 ├── queries/                    # SQL query files
-│   ├── extended_pmp_report.sql
-│   ├── short_pmp_report.sql
+│   ├── short_pmp_report.sql    # ⭐ Production-ready patch report
 │   ├── branch_office_simple.sql
 │   ├── branch_office_detailed.sql
-│   ├── managed_devices_details.sql
-│   ├── examples/               # Example and specialized queries
+│   ├── examples/               # ⚠️ Experimental queries (test before use)
+│   │   ├── extended_pmp_report.sql       # ⚠️ PM+ compatibility issues
+│   │   ├── managed_devices_details.sql   # ⚠️ PM+ compatibility issues
 │   │   ├── security_vulnerability_report.sql
 │   │   ├── patch_compliance_summary.sql
 │   │   └── agent_health_monitoring.sql
@@ -43,28 +43,30 @@ pm-report-cfg/
 
 ### Core Reports (queries/)
 
-1. **Extended PPM Report** (`extended_pmp_report.sql`)
-   - Comprehensive patch management with detailed system information
-   - Customer information, CI details, and server descriptions
-   - Complete patch status, health metrics, and installation history
-   - Suitable for monthly compliance reports and security assessments
-
-2. **Short PPM Report** (`short_pmp_report.sql`)
+1. **Short PPM Report** (`short_pmp_report.sql`) ⭐ **RECOMMENDED**
    - Condensed patch information for quick assessments
    - Essential customer identification and basic system info
    - Fast execution suitable for large environments
    - Ideal for executive summaries and mobile reports
+   - **Production-ready and PM+ verified**
 
-3. **Branch Office Reports** 
+2. **Branch Office Reports** 
    - **Simple Count** (`branch_office_simple.sql`): Quick computer count per branch
    - **Detailed** (`branch_office_detailed.sql`): Comprehensive branch management with replication policies
 
-4. **Managed Devices Details** (`managed_devices_details.sql`)
-   - Complete device inventory and management status
-   - Agent lifecycle information and connectivity status
-   - Asset management integration capabilities
+### Example Reports (queries/examples/) ⚠️ EXPERIMENTAL
 
-### Example Reports (queries/examples/)
+These queries may not work reliably in all PM+ environments. Test thoroughly before use.
+
+3. **Extended PPM Report** (`examples/extended_pmp_report.sql`) ⚠️
+   - Comprehensive patch management with detailed system information
+   - Complex CASE statements may cause compatibility issues
+   - Use `short_pmp_report.sql` for production instead
+
+4. **Managed Devices Details** (`examples/managed_devices_details.sql`) ⚠️
+   - Complete device inventory and management status
+   - Large result sets may cause performance issues
+   - Test in development environment first
 
 5. **Security Vulnerability Report** (`examples/security_vulnerability_report.sql`)
    - Security-focused analysis with critical patch identification
