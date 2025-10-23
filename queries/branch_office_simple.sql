@@ -25,6 +25,4 @@ FROM   resource r
                ON b.resource_id = m.resource_id 
        INNER JOIN branchofficedetails b2 
                ON b2.branch_office_id = b.branch_office_id
-WHERE  m.managed_status = 61
-GROUP BY b2.branch_office_name, b2.has_masteragent
-ORDER BY b2.branch_office_name;
+WHERE  m.managed_status = 61 

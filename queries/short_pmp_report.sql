@@ -47,4 +47,3 @@ FROM   resource R
        LEFT JOIN managedcomputercustomfields M2
               ON m2.resource_id = m.resource_id
 WHERE  m.managed_status = 61 
-ORDER BY m2.col1, r.NAME, p3.bulletinid;

@@ -20,18 +20,18 @@ pm-report-cfg/
 ├── README.md                    # Main documentation
 ├── LICENSE                     # Mitel proprietary license
 ├── CHANGELOG.md                # Version history
-├── queries/                    # Core SQL query files
+├── queries/                    # SQL query files
 │   ├── extended_pmp_report.sql
 │   ├── short_pmp_report.sql
 │   ├── branch_office_simple.sql
 │   ├── branch_office_detailed.sql
 │   ├── managed_devices_details.sql
+│   ├── examples/               # Example and specialized queries
+│   │   ├── security_vulnerability_report.sql
+│   │   ├── patch_compliance_summary.sql
+│   │   └── agent_health_monitoring.sql
 │   └── archive/                # Archived/legacy files
 │       └── SQL Query Reports.sql   # Legacy combined file
-├── examples/                   # Example and specialized queries
-│   ├── security_vulnerability_report.sql
-│   ├── patch_compliance_summary.sql
-│   └── agent_health_monitoring.sql
 └── docs/                       # Detailed documentation
     ├── CONFIGURATION.md        # Setup and configuration guide
     ├── USAGE_GUIDE.md          # Detailed usage instructions
@@ -64,17 +64,17 @@ pm-report-cfg/
    - Agent lifecycle information and connectivity status
    - Asset management integration capabilities
 
-### Example Reports (examples/)
+### Example Reports (queries/examples/)
 
-5. **Security Vulnerability Report** (`security_vulnerability_report.sql`)
+5. **Security Vulnerability Report** (`examples/security_vulnerability_report.sql`)
    - Security-focused analysis with critical patch identification
    - Vulnerability assessment and compliance auditing
 
-6. **Patch Compliance Summary** (`patch_compliance_summary.sql`)
+6. **Patch Compliance Summary** (`examples/patch_compliance_summary.sql`)
    - High-level compliance statistics and percentages
    - Executive dashboards and KPI reporting
 
-7. **Agent Health Monitoring** (`agent_health_monitoring.sql`)
+7. **Agent Health Monitoring** (`examples/agent_health_monitoring.sql`)
    - Infrastructure monitoring and agent connectivity
    - Troubleshooting and health assessment
 

@@ -23,6 +23,4 @@ FROM   resource R
        INNER JOIN patch P3 ON p3.patchid = a.patch_id
        LEFT JOIN pmreshealthstatus P2 ON p2.resource_id = m.resource_id
        LEFT JOIN managedcomputercustomfields M2 ON m2.resource_id = m.resource_id
-WHERE  m.managed_status = 61
-GROUP BY m2.col1
-ORDER BY "Compliance Percentage" ASC;
+WHERE  m.managed_status = 61 

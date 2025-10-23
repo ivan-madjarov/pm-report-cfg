@@ -8,9 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
+- Moved `examples/` folder under `queries/` directory for better organization
 - Moved `QUERY_INDEX.md` to `docs/` folder for better documentation organization
 - Moved `SQL Query Reports.sql` to `queries/archive/` subfolder as legacy file
+- Removed `ORDER BY` clauses from all queries for PM+ compatibility
+- Removed `GROUP BY` clauses where not required by PM+ query reports
 - Updated all documentation references to reflect new folder structure
+
+### Fixed
+- Fixed smart quotes issue causing "invalid parameter format" errors in PM+ query reports
+- All queries now use standard ASCII quotes for proper PM+ compatibility
+- Removed trailing semicolons and unnecessary sorting for better query execution
 
 ### Added
 - Initial repository setup with documentation

@@ -51,8 +51,5 @@ FROM   branchofficedetails
                 LEFT JOIN managedcomputer m
                        ON m.resource_id = branchmemberresourcerel.resource_id
          WHERE  m.managed_status = 61 OR m.managed_status IS NULL
-         GROUP BY branchofficedetails.branch_office_name,
-                  branchofficedetails.branch_office_id
        ) Mg_count 
-              ON Mg_count.branch_office_id = branchofficedetails.branch_office_id
-ORDER BY branchofficedetails.branch_office_name;
+              ON Mg_count.branch_office_id = branchofficedetails.branch_office_id 

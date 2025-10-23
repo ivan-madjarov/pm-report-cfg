@@ -38,5 +38,4 @@ FROM   resource r
        LEFT JOIN branchmemberresourcerel b ON b.resource_id = managedcomputer.resource_id
        LEFT JOIN branchofficedetails b2 ON b2.branch_office_id = b.branch_office_id
        LEFT JOIN resourcelivestatus rl ON rl.resource_id = managedcomputer.resource_id
-WHERE  managedcomputer.managed_status = 61
-ORDER BY managedcomputer.agent_executed_on DESC;
+WHERE  managedcomputer.managed_status = 61 

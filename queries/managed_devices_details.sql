@@ -81,5 +81,4 @@ FROM   resource
               ON b2.branch_office_id = b.branch_office_id 
        LEFT JOIN resourcelivestatus r 
               ON r.resource_id = managedcomputer.resource_id 
-WHERE  managedcomputer.managed_status = 61
-ORDER BY resource."name";
+WHERE  managedcomputer.managed_status = 61 
