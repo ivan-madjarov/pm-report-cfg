@@ -7,30 +7,14 @@
 
 SELECT r.NAME AS "Computer Name",
        m2.col1 AS "Customer Name",
-       CASE 
-         WHEN managedcomputer.agent_status = 1 THEN 'Online'
-         WHEN managedcomputer.agent_status = 0 THEN 'Offline'
-         ELSE 'Unknown'
-       END AS "Agent Status",
+       managedcomputer.agent_status AS "Agent Status",
        managedcomputer.agent_version AS "Agent Version",
        LONG_TO_DATE(managedcomputer.agent_executed_on) AS "Last Contact",
-       CASE 
-         WHEN managedcomputer.agent_executed_on > (EXTRACT(EPOCH FROM NOW()) - 86400) * 1000 
-         THEN 'Recent (24h)'
-         WHEN managedcomputer.agent_executed_on > (EXTRACT(EPOCH FROM NOW()) - 604800) * 1000 
-         THEN 'This Week'
-         WHEN managedcomputer.agent_executed_on > (EXTRACT(EPOCH FROM NOW()) - 2592000) * 1000 
-         THEN 'This Month'
-         ELSE 'Stale'
-       END AS "Contact Freshness",
+       managedcomputer.agent_executed_on AS "Agent Executed On Timestamp",
        p.os_name AS "Operating System",
        r.domain_netbios_name AS "Domain",
-       COALESCE(b2.branch_office_name, 'Direct') AS "Connection Type",
-       CASE 
-         WHEN rl.status = 1 THEN 'Reachable'
-         WHEN rl.status = 0 THEN 'Unreachable'
-         ELSE 'Unknown'
-       END AS "Live Status"
+       b2.branch_office_name AS "Branch Office",
+       rl.status AS "Live Status"
 FROM   resource r
        INNER JOIN managedcomputer ON r.resource_id = managedcomputer.resource_id
        LEFT JOIN patchmgmtosinfo p ON p.resource_id = managedcomputer.resource_id
