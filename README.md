@@ -2,6 +2,28 @@
 
 A repository containing SQL queries and configuration files for creating custom reports in ManageEngine Patch Manager Plus. This collection enables organizations to extract specific information from the Patch Manager Plus database that may not be available through standard canned reports.
 
+---
+
+## 🚨 **IMPORTANT WARNING - READ BEFORE USE** 🚨
+
+> ### ⛔ **DO NOT USE QUERIES FROM `examples/` OR `archive/` FOLDERS IN PRODUCTION** ⛔
+>
+> **ONLY use queries from the root `queries/` folder for production environments!**
+>
+> - ✅ **SAFE FOR PRODUCTION**: Queries in `queries/` (root level) are tested and verified
+> - ⚠️ **EXPERIMENTAL/UNTESTED**: Queries in `queries/examples/` may cause errors or performance issues
+> - 🗄️ **LEGACY/DEPRECATED**: Queries in `queries/archive/` are outdated and unsupported
+>
+> **Using queries from examples or archive folders may result in:**
+> - Report execution failures
+> - Database performance degradation  
+> - Incomplete or incorrect data
+> - Compatibility issues with your PM+ version
+>
+> **Always test any query in a development environment before production deployment.**
+
+---
+
 ## Overview
 
 Patch Manager Plus provides the ability to retrieve custom information from its database using Query Reports. This is particularly useful when standard reports don't provide the specific data required for compliance, auditing, or operational needs. Query Reports can be created through the Reports tab → Custom Report → New Query Report functionality.
@@ -17,11 +39,11 @@ Patch Manager Plus provides the ability to retrieve custom information from its 
 
 ```
 pm-report-cfg/
-├── README.md                    # Main documentation
+├── README.md                   # Main documentation
 ├── LICENSE                     # Mitel proprietary license
 ├── CHANGELOG.md                # Version history
-├── queries/                    # SQL query files
-│   ├── short_pmp_report.sql    # ⭐ Production-ready patch report
+├── queries/                    # ⭐ Production-ready patch report SQL query files
+│   ├── short_pmp_report.sql
 │   ├── branch_office_simple.sql
 │   ├── branch_office_detailed.sql
 │   ├── examples/               # ⚠️ Experimental queries (test before use)
