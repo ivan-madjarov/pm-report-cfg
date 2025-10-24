@@ -19,8 +19,6 @@ A repository containing SQL queries and configuration files for creating custom 
 > - Database performance degradation  
 > - Incomplete or incorrect data
 > - Compatibility issues with your PM+ version
->
-> **Always test any query in a development environment before production deployment.**
 
 ---
 
