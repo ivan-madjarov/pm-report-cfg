@@ -11,14 +11,8 @@ A repository containing SQL queries and configuration files for creating custom 
 > **ONLY use queries from the root `queries/` folder for production environments!**
 >
 > - ✅ **SAFE FOR PRODUCTION**: Queries in `queries/` (root level) are tested and verified
-> - ⚠️ **EXPERIMENTAL/UNTESTED**: Queries in `queries/examples/` may cause errors or performance issues
+> - ⚠️ **EXPERIMENTAL/UNTESTED**: Queries in `queries/examples/` may cause errors
 > - 🗄️ **LEGACY/DEPRECATED**: Queries in `queries/archive/` are outdated and unsupported
->
-> **Using queries from examples or archive folders may result in:**
-> - Report execution failures
-> - Database performance degradation  
-> - Incomplete or incorrect data
-> - Compatibility issues with your PM+ version
 
 ---
 
