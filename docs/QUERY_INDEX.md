@@ -108,6 +108,12 @@ This document provides a comprehensive index of all available SQL queries in the
 - Version information
 - Live connectivity status
 
+### 4. Branch & Resource Relationship Examples
+**File:** `examples/branch_and_resource_examples.sql`
+**Purpose:** Small examples showing joins between branch-related tables and resources
+**Use Case:** Exploration, troubleshooting, and quick checks of branch-resource mappings
+**Performance:** Very fast (small tables), add WHERE filters for larger datasets
+
 ## Query Selection Guide
 
 ### By Use Case
