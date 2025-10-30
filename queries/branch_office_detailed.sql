@@ -39,4 +39,4 @@ FROM   branchofficedetails
                        ON branchmemberresourcerel.branch_office_id = branchofficedetails.branch_office_id
          GROUP BY branchofficedetails.branch_office_name, branchofficedetails.branch_office_id
        ) Mg_count 
-              ON Mg_count.branch_office_id = branchofficedetails.branch_office_id 
+              ON Mg_count.branch_office_id = branchofficedetails.branch_office_id

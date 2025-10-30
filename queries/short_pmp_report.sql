@@ -46,4 +46,4 @@ FROM   resource R
                  AND i.patch_id = a.patch_id
        LEFT JOIN managedcomputercustomfields M2
               ON m2.resource_id = m.resource_id
-WHERE  m.managed_status = 61 
+WHERE  m.managed_status = 61
