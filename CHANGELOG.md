@@ -17,6 +17,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed `ORDER BY` clauses from all queries for PM+ compatibility
 - Removed `GROUP BY` clauses where not required by PM+ query reports
 - Updated all documentation references to reflect new folder structure
+ - **Added `queries/production/` folder** and moved four production-ready files:
+   - `patch_report_standard.sql`
+   - `patch_report_extended.sql`
+   - `patch_report_short.sql`
+   - `patch_report_health.sql`
+   - These files were reviewed and organized under `queries/production/` for clarity
 
 ### Fixed
 - Fixed smart quotes issue causing "invalid parameter format" errors in PM+ query reports

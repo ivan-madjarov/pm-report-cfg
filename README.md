@@ -34,7 +34,12 @@ pm-report-cfg/
 ├── README.md                   # Main documentation
 ├── LICENSE                     # Mitel proprietary license
 ├── CHANGELOG.md                # Version history
-├── queries/                    # ⭐ Production-ready patch report SQL query files
+├── queries/                    # Patch report SQL query files
+│   ├── production/             # ⭐ Production-ready, reviewed and tested queries
+│   │   ├── patch_report_standard.sql
+│   │   ├── patch_report_extended.sql
+│   │   ├── patch_report_short.sql
+│   │   └── patch_report_health.sql
 │   ├── short_pmp_report.sql
 │   ├── branch_office_simple.sql
 │   ├── branch_office_detailed.sql
@@ -47,10 +52,10 @@ pm-report-cfg/
 │   └── archive/                # Archived/legacy files
 │       └── SQL Query Reports.sql   # Legacy combined file
 └── docs/                       # Detailed documentation
-    ├── CONFIGURATION.md        # Setup and configuration guide
-    ├── USAGE_GUIDE.md          # Detailed usage instructions
-    ├── QUERY_INDEX.md          # Complete query reference
-    └── DATABASE_SCHEMA.md      # Database reference
+   ├── CONFIGURATION.md        # Setup and configuration guide
+   ├── USAGE_GUIDE.md          # Detailed usage instructions
+   ├── QUERY_INDEX.md          # Complete query reference
+   └── DATABASE_SCHEMA.md      # Database reference
 ```
 
 ## Available Reports
